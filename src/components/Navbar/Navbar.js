@@ -1,15 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './navbar.css';
-
+// TODO: Create Item navbar component as button and export it
 function Navbar() {
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav className="p-2 navbar d-flex justify-content-between navbar-light">
-      <Link to="/" className="title-math text-black text-decoration-none">Manuel Aldaraca</Link>
+      <ItemNab />
       <div className="menu-items">
-        <Link to="/" className="links text-decoration-none">About Me</Link>
-        <Link to="/#aboutme" className="links text-decoration-none">Projects</Link>
-        <Link to="/#projects" className="links text-decoration-none">Contact</Link>
+        <ItemNab
+          onClick={() => scrollTo('contact')}
+          className="links text-decoration-none"
+        />
+        <span className="links text-decoration-none">Projects</span>
+        <span className="links text-decoration-none">Contact</span>
+        <ItemNab />
+        <ItemNab />
       </div>
     </nav>
   );
