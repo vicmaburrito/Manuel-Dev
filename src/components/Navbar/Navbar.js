@@ -24,18 +24,24 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <ItemNav
-            onClick={() => scrollTo('about')}
-            item="About Me"
-          />
-          <ItemNav
-            onClick={() => scrollTo('about')}
-            item="Projects"
-          />
-          <ItemNav
-            onClick={() => scrollTo('contact')}
-            item="Contact"
-          />
+          <li className="nav-item">
+            <ItemNav
+              onClick={() => scrollTo('about')}
+              item="About Me"
+            />
+          </li>
+          <li className="nav-item">
+            <ItemNav
+              onClick={() => scrollTo('about')}
+              item="Projects"
+            />
+          </li>
+          <li className="nav-item">
+            <ItemNav
+              onClick={() => scrollTo('contact')}
+              item="Contact"
+            />
+          </li>
         </ul>
       </div>
     </nav>
