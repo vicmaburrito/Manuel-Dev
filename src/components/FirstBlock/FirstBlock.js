@@ -3,9 +3,10 @@ import './FirstBlock.css';
 
 function FirstBlock() {
   return (
-    <section>
-      <div className="d-flex justify-content-center mt-5">
-        <h1>Hello There!</h1>
+    <section className="masthead d-flex align-items-center">
+      <div className="container px-4 px-lg-5 text-center">
+        <h1 className="mb-1">Manuel Aldaraca</h1>
+        <h3 className="mb-5"><em>Hello There!</em></h3>
       </div>
     </section>
   );
