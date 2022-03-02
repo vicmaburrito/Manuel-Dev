@@ -31,7 +31,7 @@ function Projects() {
             <h4><strong>React</strong></h4>
             <p className="text-faded mb-0">
               Open-source JavaScript library that is used for building user
-              interfaces specifically for single-page applications
+              interfaces specifically for SPA.
             </p>
           </div>
           <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -47,7 +47,7 @@ function Projects() {
             <span className="service-icon rounded-circle mx-auto mb-3">
               <img src={JS} alt="logoJS" width="70vh" className="mb-3" />
             </span>
-            <h4><strong>Javascript</strong></h4>
+            <h4><strong>JavaScript</strong></h4>
             <p className="text-faded mb-0">Using plain JavaScript without any additional libraries.</p>
           </div>
         </div>
