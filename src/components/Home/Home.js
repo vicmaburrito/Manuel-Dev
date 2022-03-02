@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <FirstBlock id="firstBlock" />
-      <Projects />
+      <Projects id="projects" />
     </>
   );
 }

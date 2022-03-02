@@ -15,5 +15,25 @@
 }
 
 .bg-projects {
-  background-color: #99a799;
+  background-color: #064635;
+}
+
+.service-icon {
+  background-color: #fff;
+  color: #1d809f;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
