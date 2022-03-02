@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 
 function ItemNav({ item }) {
   return (
-    <a className="nav-link">
-      {item}
-    </a>
+    <li className="nav-item">
+      <a className="nav-link">
+        {item}
+      </a>
+    </li>
   );
 }
 

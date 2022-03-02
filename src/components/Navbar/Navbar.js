@@ -1,17 +1,17 @@
 import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import ItemNav from './itemNav';
+import ItemNav from './itemNav';
 import './navbar.css';
 
 // DONE: Create Item navbar component as button and export it
 function Navbar() {
-  // const scrollTo = (id) => {
-  //   const element = document.getElementById(id);
-  //   element.scrollIntoView({
-  //     behavior: 'smooth',
-  //   });
-  // };
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
 
   return (
     // <header className="header">
@@ -51,26 +51,24 @@ function Navbar() {
     // </header>
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#some">Manuel</a>
-        {/* <ItemNav
-          onClick={() => scrollTo('firstBlock')}
-          item="Manuel Aldaraca"
-        /> */}
+        <span className="navbar-brand">Manuel Aldaraca</span>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ">
-            <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#id">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#id">Course</a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#id" tabIndex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            <ItemNav
+              onClick={() => scrollTo('about')}
+              item="About Me"
+            />
+            <ItemNav
+              onClick={() => scrollTo('projects')}
+              item="Projects"
+            />
+            <ItemNav
+              onClick={() => scrollTo('contact')}
+              item="Contact"
+            />
           </ul>
         </div>
       </div>

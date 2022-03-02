@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import TOPOLOGY from 'vanta/dist/vanta.topology.min';
+import * as p5 from 'p5';
 import './FirstBlock.css';
-import background from '../../assets/images/FirstBlockbackground.png';
 
 function FirstBlock() {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        TOPOLOGY({
+          el: myRef.current,
+          p5,
+        }),
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
-    <section className="masthead d-flex align-items-center" style={{ background: `url(${background})` }}>
-      <div className="container px-4 px-lg-5 text-center">
-        <h1 className="mb-1 display-1 tracking-in-expand text-white">Manuel Aldaraca</h1>
-        <h3 className="mb-5 display-3 text-white"><em>Hello There!</em></h3>
+    <section className="masthead d-flex align-items-center" ref={myRef}>
+      <div className="container px-4 px-lg-5 text-center scale-down-center">
+        <h1 className="mb-1 display-3 text-white">Manuel Aldaraca</h1>
+        <h3 className="mb-5 text-white"><em>Full-Stack Web Developer</em></h3>
       </div>
     </section>
   );
