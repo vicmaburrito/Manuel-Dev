@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ItemProject({ project, desc, imgName }) {
   return (
@@ -19,4 +20,11 @@ function ItemProject({ project, desc, imgName }) {
     </div>
   );
 }
+
+ItemProject.propTypes = {
+  project: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  imgName: PropTypes.string.isRequired,
+};
+
 export default ItemProject;
