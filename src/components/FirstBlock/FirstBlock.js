@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import TOPOLOGY from 'vanta/dist/vanta.topology.min';
-// import * as p5 from 'p5';
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 import './FirstBlock.css';
@@ -19,12 +17,12 @@ function FirstBlock() {
           gyroControls: false,
           minHeight: 200.00,
           minWidth: 200.00,
-          highlightColor: 0x2222,
-          midtoneColor: 0x89964e,
-          lowlightColor: 0x3d5021,
+          highlightColor: 0x234123,
+          midtoneColor: 0x9dc567,
+          lowlightColor: 0xfffff,
           baseColor: 0x064635,
           blurFactor: 0.28,
-          speed: 2.20,
+          speed: 2.90,
           zoom: 1.80,
         }),
       );
