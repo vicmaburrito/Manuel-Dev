@@ -1,8 +1,8 @@
 import React from 'react';
-import ROR from '../../assets/icons/ROR.png';
-import REACT from '../../assets/icons/REACT.png';
+import ROR from '../../assets/icons/logoRor.svg';
+import REACT from '../../assets/icons/logoReact.svg';
 import POSTGRES from '../../assets/icons/POSTGRES.png';
-import JS from '../../assets/icons/JS.png';
+import JS from '../../assets/icons/logoJs.svg';
 
 import './style.css';
 
@@ -16,26 +16,16 @@ function Projects() {
         </div>
         <div className="row gx-4 gx-lg-5">
           <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <img src={ROR} alt="logoROR" width="70vh" className="mb-3" />
+            <span className="service-icon rounded-circle mx-auto mb-3 logo-rails">
+              <img src={ROR} alt="logoROR" width="70vh" className="mb-3 logo-rails-img" />
             </span>
             <h4><strong>Ruby on Rails</strong></h4>
             <p className="text-faded mb-0">
               Rails is a full-stack framework.
             </p>
           </div>
-          <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
-              <img src={REACT} alt="logoREACT" width="70vh" className="mb-3" />
-            </span>
-            <h4><strong>React</strong></h4>
-            <p className="text-faded mb-0">
-              Open-source JavaScript library that is used for building user
-              interfaces specifically for SPA.
-            </p>
-          </div>
           <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span className="service-icon rounded-circle mx-auto mb-3">
+            <span className="service-icon rounded-circle mx-auto mb-3 logo-react-pg">
               <img src={POSTGRES} alt="logoPOSTGRES" width="70vh" className="mb-2" />
             </span>
             <h4><strong>PostgreSQL</strong></h4>
@@ -43,8 +33,18 @@ function Projects() {
               Open source relational database management
             </p>
           </div>
+          <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span className="service-icon rounded-circle mx-auto mb-3 logo-react-pg">
+              <img src={REACT} alt="logoREACT" width="110vh" className="mb-3 react-logo" />
+            </span>
+            <h4><strong>React</strong></h4>
+            <p className="text-faded mb-0">
+              Open-source JavaScript library for build user
+              interfaces SPA.
+            </p>
+          </div>
           <div className="col-lg-3 col-md-6">
-            <span className="service-icon rounded-circle mx-auto mb-3">
+            <span className="service-icon rounded-circle mx-auto mb-3 logo-js">
               <img src={JS} alt="logoJS" width="70vh" className="mb-3" />
             </span>
             <h4><strong>JavaScript</strong></h4>

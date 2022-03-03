@@ -19,14 +19,38 @@
 }
 
 .service-icon {
-  background-color: #fff;
-  color: #1d809f;
   height: 7rem;
   width: 7rem;
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.logo-react-pg {
+  background-color: #fff;
+}
+
+.logo-rails {
+  background: #d30001;
+}
+
+.logo-rails-img {
+  filter: brightness(0) invert(1);
+}
+
+.react-logo {
+  pointer-events: none;
+}
+
+.logo-js {
+  background-color: #fcdc00;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-logo {
+    animation: React-logo-spin infinite 20s linear;
+  }
 }
 
 .rounded-circle {
@@ -36,4 +60,14 @@
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
+}
+
+@keyframes React-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
