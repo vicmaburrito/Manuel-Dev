@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ItemProject({ project, desc, imgName }) {
   return (
-    <div className="col-lg-6">
+    <>
       <a className="portfolio-item" href="#!">
         <div className="caption">
           <div className="caption-content">
@@ -17,7 +17,7 @@ function ItemProject({ project, desc, imgName }) {
         </div>
         <img className="img-fluid" src={imgName} alt="..." />
       </a>
-    </div>
+    </>
   );
 }
 
