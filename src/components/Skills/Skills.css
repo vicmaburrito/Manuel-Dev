@@ -1,7 +1,10 @@
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
-  height: 100vh;
+
+  /*
+   height: 100vh;
+   */
 }
 
 .content-section-heading h2,
@@ -16,7 +19,7 @@
 }
 
 .bg-projects {
-  background-color: #064635;
+  background-color: #fff;
 }
 
 .service-icon {
@@ -25,7 +28,7 @@
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .logo-react-pg {

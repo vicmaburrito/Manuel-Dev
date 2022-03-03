@@ -11,16 +11,16 @@ function Skills() {
     <section className="content-section bg-projects text-white text-center" id="services">
       <div className="container px-4 px-lg-5">
         <div className="content-section-heading">
-          <h3 className="text-secondary text-warning mt-0 mb-0">knowledge</h3>
-          <h2 className="mb-5">Skills</h2>
+          <h1 className="text-warning mt-0 mb-0">knowledge</h1>
+          <h2 className="mb-5 text-dark">Skills</h2>
         </div>
         <div className="row gx-4 gx-lg-5">
           <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span className="service-icon rounded-circle mx-auto mb-3 logo-rails">
               <img src={ROR} alt="logoROR" width="70vh" className="mb-3 logo-rails-img" />
             </span>
-            <h4><strong>Ruby on Rails</strong></h4>
-            <p className="text-faded mb-0">
+            <h4 className="text-dark"><strong>Ruby on Rails</strong></h4>
+            <p className="text-dark mb-0">
               Rails is a full-stack framework.
             </p>
           </div>
@@ -28,8 +28,8 @@ function Skills() {
             <span className="service-icon rounded-circle mx-auto mb-3 logo-react-pg">
               <img src={POSTGRES} alt="logoPOSTGRES" width="70vh" className="mb-2" />
             </span>
-            <h4><strong>PostgreSQL</strong></h4>
-            <p className="text-faded mb-0">
+            <h4 className="text-dark"><strong>PostgreSQL</strong></h4>
+            <p className="text-dark mb-0">
               Open source relational database management
             </p>
           </div>
@@ -37,8 +37,8 @@ function Skills() {
             <span className="service-icon rounded-circle mx-auto mb-3 logo-react-pg">
               <img src={REACT} alt="logoREACT" width="110vh" className="mb-3 react-logo" />
             </span>
-            <h4><strong>React</strong></h4>
-            <p className="text-faded mb-0">
+            <h4 className="text-dark"><strong>React</strong></h4>
+            <p className="text-dark mb-0">
               Open-source JavaScript library for build user
               interfaces SPA.
             </p>
@@ -47,8 +47,8 @@ function Skills() {
             <span className="service-icon rounded-circle mx-auto mb-3 logo-js">
               <img src={JS} alt="logoJS" width="70vh" className="mb-3" />
             </span>
-            <h4><strong>JavaScript</strong></h4>
-            <p className="text-faded mb-0">Using plain JavaScript without any additional libraries.</p>
+            <h4 className="text-dark"><strong>JavaScript</strong></h4>
+            <p className="text-dark mb-0">Using plain JavaScript without any additional libraries.</p>
           </div>
         </div>
       </div>

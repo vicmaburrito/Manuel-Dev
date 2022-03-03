@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import TOPOLOGY from 'vanta/dist/vanta.topology.min';
-// import * as p5 from 'p5';
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 import './FirstBlock.css';
