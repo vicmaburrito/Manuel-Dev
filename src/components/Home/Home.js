@@ -1,12 +1,14 @@
 import React from 'react';
 import FirstBlock from '../FirstBlock/FirstBlock';
-import Projects from '../MyProjects/Projects';
+import Skills from '../Skills/Skills';
+import Projects from '../PersonalProjects/Projects';
 
 function Home() {
   return (
     <>
       <FirstBlock id="firstBlock" />
-      <Projects id="projects" />
+      <Skills id="Skills" />
+      <Projects id="Projects" />
     </>
   );
 }

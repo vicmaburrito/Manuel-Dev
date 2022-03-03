@@ -1,18 +1,18 @@
 import React from 'react';
 import ROR from '../../assets/icons/logoRor.svg';
 import REACT from '../../assets/icons/logoReact.svg';
-import POSTGRES from '../../assets/icons/POSTGRES.png';
+import POSTGRES from '../../assets/images/POSTGRES.png';
 import JS from '../../assets/icons/logoJs.svg';
 
-import './style.css';
+import './Skills.css';
 
-function Projects() {
+function Skills() {
   return (
     <section className="content-section bg-projects text-white text-center" id="services">
       <div className="container px-4 px-lg-5">
         <div className="content-section-heading">
-          <h3 className="text-secondary text-warning mt-0 mb-0">Stack</h3>
-          <h2 className="mb-5">knowledge</h2>
+          <h3 className="text-secondary text-warning mt-0 mb-0">knowledge</h3>
+          <h2 className="mb-5">Skills</h2>
         </div>
         <div className="row gx-4 gx-lg-5">
           <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -56,4 +56,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Skills;
