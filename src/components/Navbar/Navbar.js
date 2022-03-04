@@ -1,10 +1,8 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import PropTypes from 'prop-types';
 import ItemNav from './itemNav';
 import './navbar.css';
 
-// DONE: Create Item navbar component as button and export it
 function Navbar() {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
@@ -24,17 +22,17 @@ function Navbar() {
           <ul className="navbar-nav ">
             <ItemNav
               onClick={() => scrollTo('skills')}
-              idToGo="#skills"
+              // idToGo={idRedirect}
               item="Skills"
             />
             <ItemNav
               onClick={() => scrollTo('projects')}
-              idToGo="#projects"
+              // idToGo={idRedirect}
               item="projects"
             />
             <ItemNav
               onClick={() => scrollTo('contact')}
-              idToGo="#contact"
+              // idToGo={idRedirect}
               item="Contact"
             />
           </ul>
@@ -43,4 +41,9 @@ function Navbar() {
     </nav>
   );
 }
+
+// Navbar.propTypes = {
+//   idRedirect: PropTypes.string.isRequired,
+// };
+
 export default Navbar;

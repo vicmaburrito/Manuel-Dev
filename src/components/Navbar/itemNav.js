@@ -1,13 +1,13 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function ItemNav({ item, idToGo }) {
   return (
     <li className="nav-item">
-      <a href={idToGo} className="nav-link">
+      <Link to={idToGo} className="nav-link">
         {item}
-      </a>
+      </Link>
     </li>
   );
 }
