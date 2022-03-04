@@ -1,21 +1,22 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
 import PropTypes from 'prop-types';
+import './navbar.css';
 
-// TODO: Import button here and fix redirect to section id;
+// DONE: Import button here and fix redirect to section id;
 function ItemNav({ item, onClick }) {
   return (
     <li className="nav-item">
-      <Button onClick={onClick} className="nav-link">
+      <Nav.Link onClick={onClick} className="mx-2">
         {item}
-      </Button>
+      </Nav.Link>
     </li>
   );
 }
 
 ItemNav.propTypes = {
   item: PropTypes.string.isRequired,
+  onClick: PropTypes.string.isRequired,
 };
 
 export default ItemNav;

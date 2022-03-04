@@ -28,10 +28,10 @@ function Navbar() {
             <ItemNav
               onClick={() => scrollTo('projects')}
               // idToGo={idRedirect}
-              item="projects"
+              item="Projects"
             />
             <ItemNav
-              onClick={() => scrollTo('contact')}
+              onClick={() => scrollTo('firstBlock')}
               // idToGo={idRedirect}
               item="Contact"
             />
