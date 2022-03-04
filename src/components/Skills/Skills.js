@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
 import ROR from '../../assets/icons/logoRor.svg';
 import REACT from '../../assets/icons/logoReact.svg';
 import POSTGRES from '../../assets/images/POSTGRES.png';
@@ -6,9 +8,9 @@ import JS from '../../assets/icons/logoJs.svg';
 
 import './Skills.css';
 
-function Skills() {
+function Skills({ id }) {
   return (
-    <section className="content-section bg-projects text-white text-center" id="services">
+    <Container className="content-section bg-projects text-white text-center" id={id}>
       <div className="container px-4 px-lg-5">
         <div className="content-section-heading">
           <h1 className="text-warning mt-0 mb-0">knowledge</h1>
@@ -52,8 +54,12 @@ function Skills() {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 }
+
+Skills.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 
 export default Skills;

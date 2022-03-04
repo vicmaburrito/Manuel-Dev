@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 import './FirstBlock.css';
 
-function FirstBlock() {
+function FirstBlock({ id }) {
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
   useEffect(() => {
@@ -32,7 +33,7 @@ function FirstBlock() {
     };
   }, [vantaEffect]);
   return (
-    <section className="masthead d-flex align-items-center" ref={myRef}>
+    <section className="masthead d-flex align-items-center" ref={myRef} id={id}>
       <div className="container px-4 px-lg-5 text-center scale-down-center">
         <h1 className="mb-1 display-4 text-white">Manuel Aldaraca</h1>
         <h3 className="mb-5 text-white"><em>Full-Stack Web Developer</em></h3>
@@ -40,5 +41,9 @@ function FirstBlock() {
     </section>
   );
 }
+
+FirstBlock.propTypes = {
+  id: PropTypes.string.isRequired,
+};
 
 export default FirstBlock;
