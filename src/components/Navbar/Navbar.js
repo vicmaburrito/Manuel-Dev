@@ -23,15 +23,18 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ">
             <ItemNav
-              onClick={() => scrollTo('about')}
-              item="About Me"
+              onClick={() => scrollTo('skills')}
+              idToGo="#skills"
+              item="Skills"
             />
             <ItemNav
               onClick={() => scrollTo('projects')}
-              item="Projects"
+              idToGo="#projects"
+              item="projects"
             />
             <ItemNav
               onClick={() => scrollTo('contact')}
+              idToGo="#contact"
               item="Contact"
             />
           </ul>

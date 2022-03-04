@@ -8,9 +8,9 @@ import ticTacToe from '../../assets/images/img4.jpg';
 import CultureScience from '../../assets/images/img5.png';
 import VhmDashboard from '../../assets/images/img6.png';
 
-function Projects() {
+function Projects(id) {
   return (
-    <section className="content-section bg-portfolio" id="portfolio">
+    <section className="content-section bg-portfolio" id={id}>
       <div className="container px-4 px-lg-5">
         <div className="content-section-heading text-center">
           <h3 className="text-warning mb-0">Projects</h3>

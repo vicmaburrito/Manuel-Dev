@@ -8,7 +8,7 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <section className="content-section bg-projects text-white text-center" id="services">
+    <section className="content-section bg-projects text-white text-center" id="skills">
       <div className="container px-4 px-lg-5">
         <div className="content-section-heading">
           <h1 className="text-warning mt-0 mb-0">knowledge</h1>

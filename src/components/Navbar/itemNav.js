@@ -2,10 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ItemNav({ item }) {
+function ItemNav({ item, idToGo }) {
   return (
     <li className="nav-item">
-      <a className="nav-link">
+      <a href={idToGo} className="nav-link">
         {item}
       </a>
     </li>
@@ -14,6 +14,7 @@ function ItemNav({ item }) {
 
 ItemNav.propTypes = {
   item: PropTypes.string.isRequired,
+  idToGo: PropTypes.string.isRequired,
 };
 
 export default ItemNav;

@@ -7,8 +7,8 @@ function Home() {
   return (
     <>
       <FirstBlock id="firstBlock" />
-      <Skills id="Skills" />
-      <Projects id="Projects" />
+      <Skills id="skills" />
+      <Projects id="projects" />
     </>
   );
 }
