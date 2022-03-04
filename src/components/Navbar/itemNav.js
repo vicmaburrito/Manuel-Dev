@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+// TODO: Import button here and fix redirect to section id;
 function ItemNav({ item, idToGo }) {
   return (
     <li className="nav-item">
-      <Link to={idToGo} className="nav-link">
+      <Button to={idToGo} className="nav-link">
         {item}
-      </Link>
+      </Button>
     </li>
   );
 }
